@@ -1,0 +1,214 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #202124;
+    --White: #ffffff;
+    --second-color: #b2b4bd;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-primary);
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--White)
+}
+
+.navbar {
+    height: 4rem;
+    width: 100%;
+    position: relative;
+}
+
+.container-nav {
+    position: absolute;
+    width: 18rem;
+    height: 4rem;
+    display: flex;
+    right: 0px;
+    margin-top: 1rem;
+    margin-right: 1.4rem;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    width: 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--White)
+}
+
+.navbar-list li img {
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.navbar-list .profile-icon img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container-google {
+    display: flex;
+}
+
+.buscador {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-search {
+    padding: 0 1rem;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 42.6rem;
+    background-color: var(--color-primary);
+    position: fixed;
+    margin-bottom: -38px;
+    border: 1px solid #8d8b8b;
+    display: flex;
+    align-items: center;
+}
+
+.container-search:hover .searchOfGoogle {
+    background-color: #303134;
+}
+
+.container-search:hover {
+    background-color: #303134;
+    border: none;
+    box-shadow: 1px 1px 6px 0.5px #121212;
+}
+
+.searchOfGoogle {
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 32.6rem;
+    background-color: var(--color-primary);
+    color: var(--White);
+    z-index: 3;
+    margin: auto;
+}
+
+.magnifying-glass {
+    position: absolute;
+    left: 1rem;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.microphone {
+    height: 1.7rem;
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+.container-search img {
+    object-fit: cover;
+}
+
+.Buttons {
+    height: 7rem;
+    width: 27rem;
+    margin-top: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Primary-Buttons {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    border: none;
+    height: 3rem;
+    width: 13rem;
+    border-radius: 0.4rem;
+    background-color: #303134;
+    color: var(--White);
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 0.2px #1c1c1c;
+}
+
+.Primary-Buttons:hover {
+    border: 1px solid var(--second-color);
+}
+
+.last-iten-main span a {
+    text-decoration: none;
+    color: rgb(64 107 237);
+}
+
+footer {
+    padding: 1.2rem 0;
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.5rem;
+    background-color: #171717;
+    justify-content: center;
+}
+
+.icon-Google img {
+    height: 7rem;
+    width: 20rem;
+}
+
+.footer-list-container {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-list li a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--second-color);
+    padding-right: 1.4rem;
+}
+
+.line {
+    height: 0.01rem;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: var(--color-primary);
+}
+
+.footer-list-container>ul,
+footer>p {
+    padding-left: 2.4rem;
+}
+
+footer>p {
+    font-size: 1.4rem;
+}
